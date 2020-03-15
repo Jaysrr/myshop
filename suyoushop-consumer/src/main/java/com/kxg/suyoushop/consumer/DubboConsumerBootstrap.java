@@ -16,8 +16,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class DubboConsumerBootstrap {
-
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+     private final Logger logger = LoggerFactory.getLogger(getClass());
 
 
     @Reference(version = "1.0.0")

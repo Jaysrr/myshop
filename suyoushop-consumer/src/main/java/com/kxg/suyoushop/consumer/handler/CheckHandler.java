@@ -10,11 +10,20 @@ import org.springframework.stereotype.Component;
  **/
 public interface CheckHandler {
     /**
-    * @Description: 检验用户 单点登录后的token
-    * @Param: [token]
-    * @return: java.lang.Boolean
-    * @Author: Jay
-    * @Date: 2020/3/11
-    */
+     * @Description: 检验用户 单点登录后的token
+     * @Param: [token]
+     * @return: java.lang.Boolean
+     * @Author: Jay
+     * @Date: 2020/3/11
+     */
     Boolean checkSSOToken(String token);
+
+    /**
+     * @Description: 检验用户 是否支付的后的token
+     * @Param: [token]
+     * @return: java.lang.Boolean
+     * @Author: Jay
+     */
+    Boolean checkPayToken(String token,Long orderId);
+
 }
